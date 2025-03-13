@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --projectContainer: 1170px;
+    --color-primary: #00413D;
+    --color-secondary: #E5745D;
+    --font-jost: "Jost", sans-serif;
+    --font-vollkorn: "Vollkorn", serif;
+}
+
+@layer components {
+    .nav-item {
+        color: var(--color-primary);
+        cursor: pointer;
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+        /*font-family: "Vollkorn", serif;
+        */
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+        transition: all linear 0.3s;
+    }
+
+    .nav-item:hover {
+        color: var(--color-secondary);
+    }
+}
