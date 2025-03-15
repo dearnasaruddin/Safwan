@@ -17,8 +17,6 @@
         font-family: "Jost", sans-serif;
         font-size: 18px;
         line-height: 26px;
-        /*font-family: "Vollkorn", serif;
-        */
         -webkit-transition: all linear 0.3s;
         -moz-transition: all linear 0.3s;
         -ms-transition: all linear 0.3s;
@@ -29,4 +27,33 @@
     .nav-item:hover {
         color: var(--color-secondary);
     }
+
+
+
+
+    .customBtn {
+        font-family: "Jost", sans-serif;
+        font-size: 20px;
+        line-height: 12px;
+        color: white;
+        background: var(--color-secondary);
+        padding: 26px 44px;
+        border: none;
+        position: relative;
+    }
+
+    .customBtn::after {
+        content: "";
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 2px solid white;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
 }

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safwan</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
+
 <body>
     <!-- ======================= Nav Start ======================= -->
-    <nav class="py-[18px]">
+    <nav class="py-[18px] sticky top-0 left-0 bg-white z-50">
         <div class="max-w-(--projectContainer) mx-auto">
             <div class="flex justify-between items-center">
                 <img src="./src/assets/logo.svg" alt="logo.svg">
@@ -19,10 +21,28 @@
                     <li class="nav-item">Blog</li>
                     <li class="nav-item">Contact</li>
                 </ul>
-                <button type="button" class="text-lg leading-3 text-white bg-(--color-secondary) py-[26px] px-11 border-none relative font-jost after:w-[188px] after:h-[54px] after:content[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-1/2 after:border-2 after:border-white">Download CV</button>
+                <button type="button" class="customBtn">Download
+                    CV</button>
             </div>
         </div>
     </nav>
+    <!-- ======================= Nav End ======================= -->
 
+    <!-- ======================= Banner Start ======================= -->
+    <section class="bg-(--color-primary) pt-[321px]  pb-55 relative group overflow-hidden">
+        <div class="max-w-(--projectContainer) mx-auto relative z-[1]">
+            <h2 class="font-vollkorn font-bold text-[100px] leading-[110px] text-white"><span
+                    class="block">Hello!</span>I’m Zarror Nibors</h2>
+            <p class="font-jost font-normal text-xl leading-[30px] text-[#80A09E] max-w-[650px] mt-[14px] mb-[50px]">
+                I’m freelance <span class="text-white">UI/UX Designer</span> based in Indonesia who loves to craft
+                attractive design experiences for the web.</p>
+            <button type="button" class="customBtn">Contact
+                Me</button>
+        </div>
+        <div class="w-4/9 h-full bg-[#C4C4C4] absolute top-0 -right-full z-[0] group-hover:right-0 duration-600">
+        </div>
+    </section>
+    <!-- ======================= Banner End ======================= -->
 </body>
+
 </html>
