@@ -10,6 +10,8 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
@@ -254,11 +256,38 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-7 {
+    top: calc(var(--spacing) * 7);
+  }
+  .top-8 {
+    top: calc(var(--spacing) * 8);
+  }
+  .top-9 {
+    top: calc(var(--spacing) * 9);
+  }
+  .top-51 {
+    top: calc(var(--spacing) * 51);
+  }
+  .top-88 {
+    top: calc(var(--spacing) * 88);
+  }
+  .top-90 {
+    top: calc(var(--spacing) * 90);
+  }
   .top-\[130px\] {
     top: 130px;
   }
   .top-\[156px\] {
     top: 156px;
+  }
+  .-right-0 {
+    right: calc(var(--spacing) * -0);
+  }
+  .-right-6 {
+    right: calc(var(--spacing) * -6);
+  }
+  .-right-7 {
+    right: calc(var(--spacing) * -7);
   }
   .-right-55 {
     right: calc(var(--spacing) * -55);
@@ -266,11 +295,26 @@
   .-right-55\.5 {
     right: calc(var(--spacing) * -55.5);
   }
+  .-right-68 {
+    right: calc(var(--spacing) * -68);
+  }
+  .-right-71 {
+    right: calc(var(--spacing) * -71);
+  }
+  .-right-71\.5 {
+    right: calc(var(--spacing) * -71.5);
+  }
   .-right-full {
     right: -100%;
   }
+  .-left-6 {
+    left: calc(var(--spacing) * -6);
+  }
   .-left-50 {
     left: calc(var(--spacing) * -50);
+  }
+  .-left-60 {
+    left: calc(var(--spacing) * -60);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -395,18 +439,6 @@
       max-width: 96rem !important;
     }
   }
-  .mx-1 {
-    margin-inline: calc(var(--spacing) * 1);
-  }
-  .mx-2 {
-    margin-inline: calc(var(--spacing) * 2);
-  }
-  .mx-5 {
-    margin-inline: calc(var(--spacing) * 5);
-  }
-  .mx-7 {
-    margin-inline: calc(var(--spacing) * 7);
-  }
   .mx-12 {
     margin-inline: calc(var(--spacing) * 12);
   }
@@ -416,8 +448,20 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-2\.5 {
+    margin-top: calc(var(--spacing) * 2.5);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -431,6 +475,9 @@
   .mt-8\.5 {
     margin-top: calc(var(--spacing) * 8.5);
   }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
@@ -440,8 +487,11 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-2\.5 {
+    margin-bottom: calc(var(--spacing) * 2.5);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -463,6 +513,12 @@
   }
   .mb-\[50px\] {
     margin-bottom: 50px;
+  }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
+  .ml-1\.5 {
+    margin-left: calc(var(--spacing) * 1.5);
   }
   .box-border {
     box-sizing: border-box;
@@ -551,9 +607,15 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .size-42 {
-    width: calc(var(--spacing) * 42);
-    height: calc(var(--spacing) * 42);
+  .size-11 {
+    width: calc(var(--spacing) * 11);
+    height: calc(var(--spacing) * 11);
+  }
+  .h-67 {
+    height: calc(var(--spacing) * 67);
+  }
+  .h-67\.5 {
+    height: calc(var(--spacing) * 67.5);
   }
   .h-full {
     height: 100%;
@@ -581,6 +643,9 @@
   }
   .w-4\/9 {
     width: calc(4/9 * 100%);
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -994,6 +1059,9 @@
       --tw-space-y-reverse: 1;
     }
   }
+  .gap-x-5 {
+    column-gap: calc(var(--spacing) * 5);
+  }
   .gap-x-7 {
     column-gap: calc(var(--spacing) * 7);
   }
@@ -1094,9 +1162,6 @@
   }
   .rounded {
     border-radius: 0.25rem;
-  }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1405,18 +1470,6 @@
   .object-top {
     object-position: top;
   }
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
-  }
-  .px-10\.5 {
-    padding-inline: calc(var(--spacing) * 10.5);
-  }
-  .py-7 {
-    padding-block: calc(var(--spacing) * 7);
-  }
-  .py-7\.5 {
-    padding-block: calc(var(--spacing) * 7.5);
-  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
@@ -1440,6 +1493,12 @@
   }
   .pt-\[320px\] {
     padding-top: 320px;
+  }
+  .pb-7 {
+    padding-bottom: calc(var(--spacing) * 7);
+  }
+  .pb-7\.5 {
+    padding-bottom: calc(var(--spacing) * 7.5);
   }
   .pb-55 {
     padding-bottom: calc(var(--spacing) * 55);
@@ -1518,6 +1577,10 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
   .text-\[26px\] {
     font-size: 26px;
   }
@@ -1534,6 +1597,14 @@
   .leading-6\.5 {
     --tw-leading: calc(var(--spacing) * 6.5);
     line-height: calc(var(--spacing) * 6.5);
+  }
+  .leading-7 {
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
+  }
+  .leading-7\.5 {
+    --tw-leading: calc(var(--spacing) * 7.5);
+    line-height: calc(var(--spacing) * 7.5);
   }
   .leading-14 {
     --tw-leading: calc(var(--spacing) * 14);
@@ -1816,10 +1887,6 @@
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[0px_20px_100px_0px_\#00413d0f\;\] {
-    --tw-shadow: 0px 20px 100px 0px var(--tw-shadow-color, #00413d0f;);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-\[0px_20px_100px_0px_\#00413d0f\] {
@@ -2135,6 +2202,27 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: var(--color-secondary);
+      }
+    }
+  }
+  .hover\:bg-\[\#E5745D\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #E5745D;
+      }
+    }
+  }
+  .hover\:text-\(--color-secondary\) {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-secondary);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
