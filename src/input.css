@@ -36,7 +36,8 @@
 
     .customBtn {
         font-family: "Jost", sans-serif;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 500;
         line-height: 12px;
         color: white;
         background: var(--color-secondary);
