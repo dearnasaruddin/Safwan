@@ -11,6 +11,9 @@
 }
 
 @layer components {
+   .smoothScroll{
+    scroll-behavior: smooth;
+   }
     .nav-item {
         color: var(--color-primary);
         cursor: pointer;

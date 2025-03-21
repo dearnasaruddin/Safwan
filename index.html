@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -42,13 +42,13 @@
     <nav class="py-[18px] sticky top-0 left-0 bg-white z-50">
         <div class="max-w-(--projectContainer) mx-auto">
             <div class="flex justify-between items-center">
-                <img src="./src/assets/logo.svg" alt="logo.svg">
+                <a href="#"><img src="./src/assets/logo.svg" alt="logo.svg"></a>
                 <ul class="flex items-center gap-x-12">
-                    <li class="nav-item">Home</li>
-                    <li class="nav-item">Pages</li>
-                    <li class="nav-item">Services</li>
-                    <li class="nav-item">Blog</li>
-                    <li class="nav-item">Contact</li>
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Pages</a></li>
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                    <li class="nav-item"><a href="#blog">Blog</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
                 <button type="button" class="customBtn">Download
                     CV</button>
@@ -83,7 +83,7 @@
     <!-- ======================= Banner End ======================= -->
 
     <!-- ======================= Service Start ======================= -->
-    <section class="pt-55">
+    <section id="services" class="pt-55">
         <div class="max-w-(--projectContainer) mx-auto relative">
             <img src="./src/assets/bulet_shape.svg" alt="bulet_shape.svg" class="absolute -left-50 top-[130px]">
 
@@ -142,7 +142,7 @@
     <!-- ======================= Service End ======================= -->
 
     <!-- ======================= About Start ======================= -->
-    <section class="pt-30">
+    <section id="about" class="pt-30">
         <div class="max-w-(--projectContainer) mx-auto relative">
             <img src="./src/assets/line_shape.png" alt="line_shape.png" class="absolute -top-16 -right-55.5">
             <!-- About Top start -->
@@ -301,7 +301,7 @@
     <!-- ======================= Project End ======================= -->
 
     <!-- ======================= Portfolio Start ======================= -->
-    <section class="py-30">
+    <section id="portfolio" class="py-30">
         <div class="max-w-(--projectContainer) mx-auto relative">
             <img src="./src/assets/portfolioPlusShape.svg" alt="portfolioPlusShape.svg"
                 class="absolute top-[562px] -left-65">
@@ -473,7 +473,7 @@
     <!-- ======================= Testimonial End ======================= -->
 
     <!-- ======================= Contact Start ======================= -->
-    <section class="pt-30">
+    <section id="contact" class="pt-30">
         <div class="max-w-(--projectContainer) mx-auto relative">
             <img src="./src/assets/contactIcon.svg" alt="contactIcon.svg" class="absolute top-13 -right-72.5">
             <div class="flex gap-x-7.5 items-center">
@@ -507,7 +507,7 @@
     <!-- ======================= Contact End ======================= -->
 
     <!-- ======================= Blog Start ======================= -->
-    <section class="pt-30">
+    <section id="blog" class="py-30">
         <div class="max-w-(--projectContainer) mx-auto relative">
             <img src="./src/assets/projectLineShape.svg" alt="projectLineShape.svg" class="absolute top-88 -left-60">
             <h4 class="font-vollkorn font-medium text-lg traking-[2%] text-(--color-secondary) text-center"><img
@@ -572,6 +572,49 @@
     </section>
     <!-- ======================= Blog End ======================= -->
 
+    <!-- ======================= Footer Start ======================= -->
+    <footer class="pt-20 bg-(--color-primary)">
+        <div class="max-w-(--projectContainer) mx-auto">
+            <a href="#"><img src="./src/assets/footerLogo.svg" alt="footerLogo.svg" class="mx-auto"></a>
+            <ul class="flex gap-x-16 justify-center mt-15 mb-12.5">
+                <li
+                    class="font-jost font-medium text-lg text-white relative after:absolute after:h-full after:w-0.5 after:-right-8 after:top-0 after:-translate-x-1/2  after:bg-[#195450]">
+                    <a href="#">Home</a>
+                </li>
+                <li
+                    class="font-jost font-medium text-lg text-white relative after:absolute after:h-full after:w-0.5 after:-right-8 after:top-0 after:-translate-x-1/2  after:bg-[#195450]">
+                    <a href="#about">About</a>
+                </li>
+                <li
+                    class="font-jost font-medium text-lg text-white relative after:absolute after:h-full after:w-0.5 after:-right-8 after:top-0 after:-translate-x-1/2  after:bg-[#195450]">
+                    <a href="#services">Services</a>
+                </li>
+                <li
+                    class="font-jost font-medium text-lg text-white relative after:absolute after:h-full after:w-0.5 after:-right-8 after:top-0 after:-translate-x-1/2  after:bg-[#195450]">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li
+                    class="font-jost font-medium text-lg text-white relative after:absolute after:h-full after:w-0.5 after:-right-8 after:top-0 after:-translate-x-1/2  after:bg-[#195450]">
+                    <a href="#blog">Blog</a>
+                </li>
+                <li class="font-jost font-medium text-lg text-white"><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="flex justify-center gap-x-5 mb-20">
+                <li><a href="#"
+                        class="size-15 flex justify-center items-center rounded-full text-white bg-(--color-secondary) "><i
+                            class="fa-brands fa-skype text-[32px]"></i></a></li>
+                <li><a href="#"
+                        class="size-15 flex justify-center items-center rounded-full text-white bg-(--color-secondary) "><i
+                            class="fa-brands fa-instagram text-[32px]"></i></a></li>
+                <li><a href="#"
+                        class="size-15 flex justify-center items-center rounded-full text-white bg-(--color-secondary) "><i
+                            class="fa-brands fa-behance text-[28px]"></i></a></li>
+            </ul>
+        </div>
+        <p class="py-7.5 text-center text-white border-t border-t-[#195450]">Copyright © 2023 Design By Estiak. All
+            rights reserved.</p>
+    </footer>
+    <!-- ======================= Footer End ======================= -->
 </body>
 
 </html>
